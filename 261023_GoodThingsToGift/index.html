@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>261023_GoodThingsToGift 미리보기</title>
+<title>레고트 레고트 추석 프로모션 - good things to gift 미리보기</title>
 <style>
 html{font-size:62.5%}
 @media (max-width:1024px){html{font-size:81.25%}}
@@ -17,7 +17,7 @@ ul,ol{margin:0;padding:0;}
 </style>
 </head>
 <body>
-<div class="cf24-preview-bar"><b>미리보기 · 반응형</b><span>카페24 레이아웃·헤더·스킨 CSS 없이 표시 · legodtofficial.cafe24.com 기준 글자 크기 · 이미지 0/31장 (나머지는 아직 피그마에서 받지 않음)</span></div>
+<div class="cf24-preview-bar"><b>미리보기 · 반응형</b><span>카페24 레이아웃·헤더·스킨 CSS 없이 표시 · legodtofficial.cafe24.com 기준 글자 크기 · 이미지 31/31장</span></div>
 <div id="wrap"><div id="container"><div id="contents">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.9/swiper-bundle.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -190,35 +190,45 @@ ul,ol{margin:0;padding:0;}
                 <p class="t02 fadeCh fadeInUp" style="animation-delay: .1s;">지금 바로 만나긴 어렵다구요?<br>그래서 준비했어요, 선물하기.</p>
             </div>
             <div class="guide_slide fadeEl">
-            <div class="swiper swiper02 fadeCh fadeInUp">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                <!-- 스텝 문구: 고정, 슬라이드에 맞춰 문구만 바뀜 -->
+                <div class="step_txt fadeCh fadeInUp">
+                    <div class="txt_item on">
                         <p class="step outfit">Step 1</p>
                         <p class="t03">마음에 드는 제품을 고른 뒤<br><b>[선물하기]</b> 버튼을 눌러주세요.</p>
-                        <picture class="img_box">
-                            <source media="(max-width: 1024px)" srcset="images/guide01_m.webp">
-                            <img src="images/guide01_pc.webp" alt="선물하기 버튼 선택 화면">
-                        </picture>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="txt_item">
                         <p class="step outfit">Step 2</p>
                         <p class="t03">메시지 카드를<br>작성할 수 있어요.</p>
-                        <picture class="img_box">
-                            <source media="(max-width: 1024px)" srcset="images/guide02_m.webp">
-                            <img src="images/guide02_pc.webp" alt="메시지 카드 작성 화면">
-                        </picture>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="txt_item">
                         <p class="step outfit">Step 3</p>
                         <p class="t03">주소를 몰라도 괜찮아요.<br>받는 분의 이름과 연락처만 입력하세요.</p>
-                        <picture class="img_box">
-                            <source media="(max-width: 1024px)" srcset="images/guide03_m.webp">
-                            <img src="images/guide03_pc.webp" alt="받는 분 정보 입력 화면">
-                        </picture>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
+                <!-- 스텝 이미지: 슬라이드 -->
+                <div class="swiper swiper02 fadeCh fadeInUp" style="animation-delay: .1s;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture class="img_box">
+                                <source media="(max-width: 1024px)" srcset="images/guide01_m.webp">
+                                <img src="images/guide01_pc.webp" alt="선물하기 버튼 선택 화면">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="img_box">
+                                <source media="(max-width: 1024px)" srcset="images/guide02_m.webp">
+                                <img src="images/guide02_pc.webp" alt="메시지 카드 작성 화면">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="img_box">
+                                <source media="(max-width: 1024px)" srcset="images/guide03_m.webp">
+                                <img src="images/guide03_pc.webp" alt="받는 분 정보 입력 화면">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper02_page fadeCh fadeInUp" style="animation-delay: .1s;"></div>
             </div>
         </div>
         <div class="pick fadeEl" id="pj_curation">
@@ -364,11 +374,14 @@ ul,ol{margin:0;padding:0;}
     #promotion_box .p_sec02 .tit .t01 {font-size: clamp(2.88rem, 2.5vw, 4.8rem); font-weight: 800; line-height: 150%; color: #54361c;}
     #promotion_box .p_sec02 .tit .t01 .outfit {font-weight: 700;}
     #promotion_box .p_sec02 .tit .t02 {margin-top: clamp(1.5rem, 1.563vw, 3rem); font-size: clamp(1.44rem, 1.25vw, 2.4rem); line-height: 160%;}
-    #promotion_box .p_sec02 .swiper02 {width: clamp(51.4rem, 53.542vw, 102.8rem); margin: clamp(5rem, 5.208vw, 10rem) auto 0;}
-    #promotion_box .p_sec02 .swiper02 .swiper-slide {display: flex; flex-direction: column; align-items: center; height: auto; text-align: center;}
+    #promotion_box .p_sec02 .step_txt {display: grid; justify-items: center; margin-top: clamp(5rem, 5.208vw, 10rem); text-align: center;}
+    #promotion_box .p_sec02 .step_txt .txt_item {grid-area: 1 / 1; display: flex; flex-direction: column; align-items: center; opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s;}
+    #promotion_box .p_sec02 .step_txt .txt_item.on {opacity: 1; visibility: visible;}
+    #promotion_box .p_sec02 .swiper02 {width: clamp(51.4rem, 53.542vw, 102.8rem); margin: clamp(2.8rem, 2.917vw, 5.6rem) auto 0;}
+    #promotion_box .p_sec02 .swiper02 .swiper-slide {display: flex; justify-content: center; height: auto;}
     #promotion_box .p_sec02 .step {display: flex; align-items: center; justify-content: center; height: clamp(2.4rem, 2.5vw, 4.8rem); padding: 0 clamp(2.6rem, 2.708vw, 5.2rem); border-radius: 100px; background: #54361c; font-size: clamp(1.2rem, 1.042vw, 2rem); font-weight: 600; line-height: 120%; color: #fff;}
     #promotion_box .p_sec02 .t03 {margin-top: clamp(1.8rem, 1.875vw, 3.6rem); font-size: clamp(1.2rem, 1.042vw, 2rem); line-height: 150%; color: #000;}
-    #promotion_box .p_sec02 .swiper02 .img_box {width: 100%; margin-top: clamp(2.8rem, 2.917vw, 5.6rem);}
+    #promotion_box .p_sec02 .swiper02 .img_box {width: 100%;}
     #promotion_box .p_sec02 .swiper-pagination {position: static; display: flex; justify-content: center; gap: clamp(0.5rem, 0.521vw, 1rem); margin-top: clamp(2.8rem, 2.917vw, 5.6rem);}
     #promotion_box .p_sec02 .swiper-pagination-bullet {display: block; width: clamp(0.55rem, 0.573vw, 1.1rem); height: clamp(0.55rem, 0.573vw, 1.1rem); margin: 0; border-radius: 100px; background: #fff; opacity: .6; cursor: pointer; transition: width .3s, opacity .3s;}
     #promotion_box .p_sec02 .swiper-pagination-bullet-active {width: clamp(2.2rem, 2.292vw, 4.4rem); opacity: 1;}
@@ -451,10 +464,11 @@ ul,ol{margin:0;padding:0;}
         #promotion_box .p_sec02 .tit {padding: 0 clamp(1.7rem, 5.556vw, 3rem) clamp(3.4rem, 11.111vw, 6rem);}
         #promotion_box .p_sec02 .tit .t01 {font-size: clamp(2.21rem, 7.222vw, 3.9rem); line-height: 120%;}
         #promotion_box .p_sec02 .tit .t02 {margin-top: clamp(2.04rem, 6.667vw, 3.6rem); font-size: clamp(1.36rem, 4.444vw, 2.4rem);}
-        #promotion_box .p_sec02 .swiper02 {width: 100%; margin-top: 0;}
+        #promotion_box .p_sec02 .step_txt {margin-top: 0; padding: 0 clamp(1.7rem, 5.556vw, 3rem);}
+        #promotion_box .p_sec02 .swiper02 {width: 100%; margin-top: clamp(1.87rem, 6.111vw, 3.3rem);}
         #promotion_box .p_sec02 .step {height: clamp(3.4rem, 11.111vw, 6rem); padding: 0 clamp(2.975rem, 9.722vw, 5.25rem); font-size: clamp(1.36rem, 4.444vw, 2.4rem);}
         #promotion_box .p_sec02 .t03 {margin-top: clamp(1.7rem, 5.556vw, 3rem); font-size: clamp(1.19rem, 3.889vw, 2.1rem); line-height: 160%; color: #1a1a1a;}
-        #promotion_box .p_sec02 .swiper02 .img_box {width: clamp(26.35rem, 86.111vw, 46.5rem); margin-top: clamp(1.87rem, 6.111vw, 3.3rem);}
+        #promotion_box .p_sec02 .swiper02 .img_box {width: clamp(26.35rem, 86.111vw, 46.5rem);}
         #promotion_box .p_sec02 .swiper-pagination {gap: clamp(0.68rem, 2.222vw, 1.2rem); margin-top: clamp(1.87rem, 6.111vw, 3.3rem);}
         #promotion_box .p_sec02 .swiper-pagination-bullet {width: clamp(0.68rem, 2.222vw, 1.2rem); height: clamp(0.68rem, 2.222vw, 1.2rem);}
         #promotion_box .p_sec02 .swiper-pagination-bullet-active {width: clamp(2.04rem, 6.667vw, 3.6rem);}
@@ -500,8 +514,39 @@ ul,ol{margin:0;padding:0;}
                 loop: true,
                 autoHeight: false,
                 autoplay: {delay: 3000, disableOnInteraction: false},
-                pagination: {el: ".swiper02 .swiper-pagination", clickable: true},
+                pagination: {el: ".swiper02_page", clickable: true},
+                on: {
+                    slideChange: function () {
+                        $("#promotion_box .step_txt .txt_item").removeClass("on").eq(this.realIndex).addClass("on");
+                    },
+                },
             });
+
+            /* 뷰포트에 들어왔을 때 autoplay */
+            function swiperInView(swiper, el) {
+                swiper.autoplay.stop();
+                if (!("IntersectionObserver" in window)) {
+                    swiper.autoplay.start();
+                    return;
+                };
+                new IntersectionObserver(function (entries) {
+                    $.each(entries, function (i, entry) {
+                        if (entry.isIntersecting) {
+                            if (!swiper.autoplay.running) swiper.autoplay.start();
+                        } else {
+                            swiper.autoplay.stop();
+                        };
+                    });
+                }, {threshold: 0.3}).observe(el);
+            };
+
+            if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                swiperInView(swiper01, $("#promotion_box .p_keyvisual")[0]);
+                swiperInView(swiper02, $("#promotion_box .swiper02")[0]);
+            } else {
+                swiper01.autoplay.stop();
+                swiper02.autoplay.stop();
+            };
         };
 
         /* 탭 */

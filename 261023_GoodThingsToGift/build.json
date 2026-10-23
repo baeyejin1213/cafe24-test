@@ -6,12 +6,12 @@
       "file": "index.html",
       "label": "반응형",
       "images": 31,
-      "imagesReady": 0
+      "imagesReady": 31
     }
   ],
   "warnings": [],
   "branch": "promo/261023_GoodThingsToGift",
-  "triggerSha": "4eaea11397cbd191da4dc4d4970ecc2eafa6849d",
-  "sourceSha": "4eaea11397cbd191da4dc4d4970ecc2eafa6849d",
-  "builtAt": "2026-10-23T06:35:53.612Z"
+  "triggerSha": "0242a50a0b2f40ad13c54a57f6740c599a6535a7",
+  "sourceSha": "9ced1631ac54a79e3dae2be67848c3c7addfb7a1",
+  "builtAt": "2026-10-23T06:55:35.902Z"
 }
