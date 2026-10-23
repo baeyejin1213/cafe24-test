@@ -57,7 +57,7 @@ jobs:
           export SOURCE_SHA=$(git rev-parse HEAD)
           rm -rf _preview && mkdir _preview
           for d in promotions/*/; do
-            ls "$d"/project.html "$d"/pc.html "$d"/mo.html >/dev/null 2>&1 || continue
+            [ -f "$d/project.html" ] || [ -f "$d/pc.html" ] || [ -f "$d/mo.html" ] || continue
             node tools/build-preview.mjs "$d" "_preview/$(basename "$d")" --self-contained
           done
 
@@ -76,6 +76,7 @@ jobs:
               (cd ../pv && git checkout --orphan previews && git rm -rfq . && printf '# 기획전 미리보기\n\n기획전 폴더별 미리보기 빌드 결과입니다. GitHub Actions가 자동으로 올립니다.\n' > README.md)
             fi
             for f in _preview/*/; do
+              [ -d "$f" ] || continue
               n=$(basename "$f"); rm -rf "../pv/$n"; cp -r "$f" "../pv/$n"
             done
             (cd ../pv && git add -A && (git diff --cached --quiet || git commit -m "미리보기: ${GITHUB_REF_NAME} ${GITHUB_SHA::7}") && git push origin previews) && break
