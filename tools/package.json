@@ -1,0 +1,9 @@
+{
+  "name": "cafe24-promo-tools",
+  "private": true,
+  "type": "module",
+  "description": "기획전 이미지 export 도구",
+  "dependencies": {
+    "sharp": "0.33.5"
+  }
+}
