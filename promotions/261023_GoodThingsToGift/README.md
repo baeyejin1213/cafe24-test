@@ -54,10 +54,17 @@ FIGMA_TOKEN=figd_xxx node figma-export.mjs ../promotions/261023_GoodThingsToGift
 | 각 텍스트 클릭 시 해당 영역으로 슬라이드 앵커 / 스크롤 시 상단 고정 (탭) | `.p_tab` `position: sticky` + 헤더 높이만큼 `top` 갱신, 클릭 시 `animate` 스크롤, 스크롤 위치로 활성 탭 전환 |
 | 각 썸네일 클릭 시 하단 상품 진열 앵커 | 혜택 1 썸네일 5개 → `#pj_cate01~05`(카테고리 상단 문구) |
 | 유의사항 토글 (×2) | 버튼 `.on` 클래스 + `slideToggle`, 펼침 시 + → − (시안 `PC_Notice`/`Notice` 상태 프레임 문구) |
-| 스텝 1/2/3 스와이퍼 모션 | Swiper loop + autoplay 3초 + 드래그, 페이지네이션(활성 막대형) 클릭 이동 |
+| 스텝 1/2/3 스와이퍼 모션 | Swiper loop + autoplay 3초 + 드래그, 페이지네이션(활성 막대형) 클릭 이동. Step 배지·문구는 고정되어 문구만 바뀌고 이미지만 슬라이드(추가 수정 1차) |
 
 - 노란색 "기획전 상품 진열 시스템 모듈 영역"(×5): 코딩하지 않음. 카테고리 상단 문구만 `<!-- 하위상품진열 상단 -->`으로 작성.
 - 분홍색(탭 반투명 베리에이션, 아이폰 목업에 내용 얹기): 반영하지 않음. 시안에 있는 모양 그대로.
+
+## 추가 수정 반영
+
+### 1차 (2026-10-23)
+
+1. **스와이퍼는 뷰포트에 들어왔을 때 autoplay** — KV(`.swiper01`)·스텝(`.swiper02`) 모두 생성 직후 `autoplay.stop()`, `IntersectionObserver`(threshold 0.3)로 화면에 30% 이상 보이면 `autoplay.start()`, 벗어나면 `stop()`. `prefers-reduced-motion`이면 자동 재생하지 않습니다.
+2. **스텝 스와이퍼: `.step`·`.t03` 고정, 이미지만 슬라이드** — Step 배지·문구를 swiper 밖 `.step_txt`로 빼고 3세트를 grid 한 칸에 겹쳐 둔 뒤 `slideChange`의 `realIndex`로 `.txt_item.on`만 보이게(opacity .4s) 했습니다. 슬라이드에는 이미지만 남겼고, 페이지네이션도 swiper 밖(`.swiper02_page`)으로 옮겨 이미지 아래에 둡니다.
 
 ## 기획안 ↔ 시안 차이 (시안을 따름)
 
@@ -84,6 +91,7 @@ FIGMA_TOKEN=figd_xxx node figma-export.mjs ../promotions/261023_GoodThingsToGift
 - [ ] 콘솔에 `$ is not defined`·Swiper 오류가 없는가
 - [ ] 1920·1440·1025·1024·768·360에서 KV 문구 위치, 탭 고정·활성 전환, 썸네일 앵커 위치(헤더 + 탭 높이만큼 위)
 - [ ] KV 3장 페이드 롤링, 스텝 스와이퍼 페이지네이션
+- [ ] 스텝 스와이퍼가 화면에 들어오기 전에는 멈춰 있고(1번 슬라이드), 들어오면 넘어가기 시작하는가 / 넘길 때 Step 배지·문구 위치는 그대로이고 문구만 바뀌는가
 - [ ] 유의사항 2곳 펼침/접힘, 아이콘 + ↔ −
 - [ ] 스크롤 끝까지 내려 모든 `.fadeEl`에 `.on`이 붙는가(한 번만 재생)
 - [ ] 404 없음(이미지 31장 업로드 확인)
