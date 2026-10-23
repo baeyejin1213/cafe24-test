@@ -36,8 +36,18 @@
 promotions/<YYMMDD_Title>/
   project.html          반응형 한 장  (또는 pc.html + mo.html)
   images.json           피그마 이미지 export 목록 (tools/figma-export.mjs 입력)
+  images/               GitHub Actions가 피그마에서 받아 커밋한 WebP (직접 만들지 않음)
+  meta.json             {brand, title, domain, layout} — 미리보기 빌드용
   README.md             적용 방법, 업로드할 이미지, 반영한 기획안 코멘트, 확인 필요
 ```
+
+## 미리보기 (GitHub Actions → previews 브랜치 → Claude 아티팩트)
+
+- `promo/**` 브랜치에 push하면 `.github/workflows/preview.yml`이 돌아 ① 저장소 Secret `FIGMA_TOKEN`이 있으면 이미지를 받아 그 브랜치에
+  "피그마 이미지 받기" 커밋을 올리고 ② `tools/build-preview.mjs --self-contained`로 미리보기를 만들어 `previews` 브랜치 `<폴더명>/`에 올립니다.
+  `build.json`의 `triggerSha`가 방금 push한 커밋이면 그 push의 빌드입니다.
+- Actions가 브랜치에 커밋을 더하므로, 그 브랜치에 다시 작업할 때는 먼저 `git pull --rebase`합니다.
+- 브랜치는 항상 최신 main에서 만들거나(신규) main을 merge한 뒤(수정) 작업해서 워크플로·도구가 최신이 되게 합니다.
 
 폴더 이름은 skill 1장의 이미지 폴더 이름 규칙(YYMMDD + PascalCase 타이틀)과 같게 맞춥니다.
 
