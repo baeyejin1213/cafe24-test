@@ -1,0 +1,17 @@
+{
+  "folder": "261023_GoodThingsToGift",
+  "domain": "legodtofficial.cafe24.com",
+  "pages": [
+    {
+      "file": "index.html",
+      "label": "반응형",
+      "images": 31,
+      "imagesReady": 0
+    }
+  ],
+  "warnings": [],
+  "branch": "promo/261023_GoodThingsToGift",
+  "triggerSha": "4eaea11397cbd191da4dc4d4970ecc2eafa6849d",
+  "sourceSha": "4eaea11397cbd191da4dc4d4970ecc2eafa6849d",
+  "builtAt": "2026-10-23T06:35:53.612Z"
+}
