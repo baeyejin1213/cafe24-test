@@ -1,0 +1,160 @@
+{
+  "fileKey": "MvBLtpEKFOFoxUpwjdkyGe",
+  "images": [
+    {
+      "file": "kv01_pc.webp",
+      "nodeId": "163:5121",
+      "scale": 1
+    },
+    {
+      "file": "kv02_pc.webp",
+      "nodeId": "163:7668",
+      "scale": 1
+    },
+    {
+      "file": "kv03_pc.webp",
+      "nodeId": "163:7692",
+      "scale": 1
+    },
+    {
+      "file": "kv01_m.webp",
+      "nodeId": "163:3633",
+      "scale": 3
+    },
+    {
+      "file": "kv02_m.webp",
+      "nodeId": "163:5046",
+      "scale": 3
+    },
+    {
+      "file": "kv03_m.webp",
+      "nodeId": "163:5023",
+      "scale": 3
+    },
+    {
+      "file": "kv_title.webp",
+      "nodeId": "163:5124",
+      "scale": 2
+    },
+    {
+      "file": "cate01_pc.webp",
+      "nodeId": "163:5167",
+      "scale": 2
+    },
+    {
+      "file": "cate02_pc.webp",
+      "nodeId": "163:5177",
+      "scale": 2
+    },
+    {
+      "file": "cate03_pc.webp",
+      "nodeId": "163:5185",
+      "scale": 2
+    },
+    {
+      "file": "cate04_pc.webp",
+      "nodeId": "163:5194",
+      "scale": 2
+    },
+    {
+      "file": "cate05_pc.webp",
+      "nodeId": "163:5202",
+      "scale": 2
+    },
+    {
+      "file": "cate01_m.webp",
+      "nodeId": "163:3682",
+      "scale": 3
+    },
+    {
+      "file": "cate02_m.webp",
+      "nodeId": "163:3691",
+      "scale": 3
+    },
+    {
+      "file": "cate03_m.webp",
+      "nodeId": "163:3699",
+      "scale": 3
+    },
+    {
+      "file": "cate04_m.webp",
+      "nodeId": "163:3708",
+      "scale": 3
+    },
+    {
+      "file": "cate05_m.webp",
+      "nodeId": "163:3716",
+      "scale": 3
+    },
+    {
+      "file": "gift01_pc.webp",
+      "nodeId": "163:5219",
+      "scale": 2
+    },
+    {
+      "file": "gift02_pc.webp",
+      "nodeId": "168:2534",
+      "scale": 2
+    },
+    {
+      "file": "gift01_m.webp",
+      "nodeId": "163:3734",
+      "scale": 3
+    },
+    {
+      "file": "gift02_m.webp",
+      "nodeId": "168:2541",
+      "scale": 3
+    },
+    {
+      "file": "mileage_pc.webp",
+      "nodeId": "163:5245",
+      "scale": 2
+    },
+    {
+      "file": "mileage_m.webp",
+      "nodeId": "163:3766",
+      "scale": 3
+    },
+    {
+      "file": "guide01_pc.webp",
+      "nodeId": "163:5385",
+      "scale": 1
+    },
+    {
+      "file": "guide02_pc.webp",
+      "nodeId": "163:5398",
+      "scale": 1
+    },
+    {
+      "file": "guide03_pc.webp",
+      "nodeId": "163:5411",
+      "scale": 1
+    },
+    {
+      "file": "guide01_m.webp",
+      "nodeId": "163:3905",
+      "scale": 3
+    },
+    {
+      "file": "guide02_m.webp",
+      "nodeId": "163:3920",
+      "scale": 3
+    },
+    {
+      "file": "guide03_m.webp",
+      "nodeId": "163:3932",
+      "scale": 3
+    },
+    {
+      "file": "curation_pc.webp",
+      "nodeId": "163:5425",
+      "scale": 1
+    },
+    {
+      "file": "curation_m.webp",
+      "nodeId": "163:3944",
+      "scale": 3
+    }
+  ]
+}

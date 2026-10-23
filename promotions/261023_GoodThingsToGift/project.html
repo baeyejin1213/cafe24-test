@@ -1,0 +1,536 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- swiper -->
+<script src="/morenvy/js/swiper-bundle.min.js"></script>
+
+<!-- 아래 코드부터 복사하기 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+
+<div id="promotion_box" class="promotion_box">
+
+    <!-- 기획전 키비주얼 -->
+    <div class="p_keyvisual fadeEl">
+        <div class="swiper swiper01">
+            <div class="swiper-wrapper">
+                <picture class="swiper-slide">
+                    <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/kv01_m.webp">
+                    <img src="/morenvyimg/promotion/261023_GoodThingsToGift/kv01_pc.webp" alt="">
+                </picture>
+                <picture class="swiper-slide">
+                    <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/kv02_m.webp">
+                    <img src="/morenvyimg/promotion/261023_GoodThingsToGift/kv02_pc.webp" alt="">
+                </picture>
+                <picture class="swiper-slide">
+                    <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/kv03_m.webp">
+                    <img src="/morenvyimg/promotion/261023_GoodThingsToGift/kv03_pc.webp" alt="">
+                </picture>
+            </div>
+        </div>
+        <div class="kv_txt">
+            <h2 class="t01 fadeCh fadeInUp"><img src="/morenvyimg/promotion/261023_GoodThingsToGift/kv_title.webp" alt="GOOD THINGS TO GIFT"></h2>
+            <p class="t02 fadeCh fadeInUp" style="animation-delay: .2s;">좋은 날, 좋은 마음을 전하는 법</p>
+        </div>
+    </div>
+
+    <!-- 기획전 탭 -->
+    <div class="p_tab">
+        <ul>
+            <li class="on"><a href="#pj_promotion">프로모션</a></li>
+            <li><a href="#pj_guide">선물하기 가이드</a></li>
+            <li><a href="#pj_curation">큐레이션</a></li>
+        </ul>
+    </div>
+
+    <!-- 기획전 섹션 01 -->
+    <div class="p_sec01" id="pj_promotion">
+        <div class="intro fadeEl">
+            <p class="t01 outfit fadeCh fadeInUp">9.14(Mon) - 9.27(Sun)</p>
+            <h3 class="t02 outfit fadeCh fadeInUp" style="animation-delay: .1s;">More To Give,<br class="mo"> More To Enjoy</h3>
+            <p class="t03 fadeCh fadeInUp" style="animation-delay: .2s;">선물을 고르는 순간부터<br>전하고 난 다음까지 즐거울 수 있도록 준비했어요.</p>
+        </div>
+
+        <div class="benefit benefit01">
+            <div class="head fadeEl">
+                <span class="step_num outfit fadeCh fadeInUp">1</span>
+                <p class="t01 fadeCh fadeInUp" style="animation-delay: .1s;">포켓몬 에디션부터 트래블 아이템까지<br>다양한 선물을 <b>최대 40%</b> 혜택으로 만나보세요.</p>
+            </div>
+            <div class="cate_list fadeEl">
+                <a href="#pj_cate01" class="anchor main fadeCh fadeInUp">
+                    <picture class="img_box">
+                        <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/cate01_m.webp">
+                        <img src="/morenvyimg/promotion/261023_GoodThingsToGift/cate01_pc.webp" alt="포켓몬 에디션">
+                    </picture>
+                    <p class="t01">포켓몬 에디션</p>
+                    <p class="t02 outfit">up to 25%<svg viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14.4831 2C15.0956 2 15.4601 2.68425 15.1179 3.19227L10.7587 9.66245C10.4556 10.1125 9.79401 10.1125 9.49085 9.66245L5.13165 3.19227C4.78954 2.68425 5.15403 2 5.76653 2H14.4831Z" fill="#1A1A1A"/></svg></p>
+                </a>
+                <div class="thumb_list">
+                    <a href="#pj_cate02" class="anchor fadeCh fadeInUp" style="animation-delay: .1s;">
+                        <picture class="img_box">
+                            <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/cate02_m.webp">
+                            <img src="/morenvyimg/promotion/261023_GoodThingsToGift/cate02_pc.webp" alt="트래블">
+                        </picture>
+                        <p class="t01">트래블</p>
+                        <p class="t02 outfit">up to 40%<svg viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14.4831 2C15.0956 2 15.4601 2.68425 15.1179 3.19227L10.7587 9.66245C10.4556 10.1125 9.79401 10.1125 9.49085 9.66245L5.13165 3.19227C4.78954 2.68425 5.15403 2 5.76653 2H14.4831Z" fill="#1A1A1A"/></svg></p>
+                    </a>
+                    <a href="#pj_cate03" class="anchor fadeCh fadeInUp" style="animation-delay: .2s;">
+                        <picture class="img_box">
+                            <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/cate03_m.webp">
+                            <img src="/morenvyimg/promotion/261023_GoodThingsToGift/cate03_pc.webp" alt="텀블러">
+                        </picture>
+                        <p class="t01">텀블러</p>
+                        <p class="t02 outfit">up to 40%<svg viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14.4831 2C15.0956 2 15.4601 2.68425 15.1179 3.19227L10.7587 9.66245C10.4556 10.1125 9.79401 10.1125 9.49085 9.66245L5.13165 3.19227C4.78954 2.68425 5.15403 2 5.76653 2H14.4831Z" fill="#1A1A1A"/></svg></p>
+                    </a>
+                    <a href="#pj_cate04" class="anchor fadeCh fadeInUp" style="animation-delay: .3s;">
+                        <picture class="img_box">
+                            <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/cate04_m.webp">
+                            <img src="/morenvyimg/promotion/261023_GoodThingsToGift/cate04_pc.webp" alt="런치웨어">
+                        </picture>
+                        <p class="t01">런치웨어</p>
+                        <p class="t02 outfit">up to 20%<svg viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14.4831 2C15.0956 2 15.4601 2.68425 15.1179 3.19227L10.7587 9.66245C10.4556 10.1125 9.79401 10.1125 9.49085 9.66245L5.13165 3.19227C4.78954 2.68425 5.15403 2 5.76653 2H14.4831Z" fill="#1A1A1A"/></svg></p>
+                    </a>
+                    <a href="#pj_cate05" class="anchor fadeCh fadeInUp" style="animation-delay: .4s;">
+                        <picture class="img_box">
+                            <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/cate05_m.webp">
+                            <img src="/morenvyimg/promotion/261023_GoodThingsToGift/cate05_pc.webp" alt="레이지 선데이">
+                        </picture>
+                        <p class="t01">레이지 선데이</p>
+                        <p class="t02 outfit">20%<svg viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14.4831 2C15.0956 2 15.4601 2.68425 15.1179 3.19227L10.7587 9.66245C10.4556 10.1125 9.79401 10.1125 9.49085 9.66245L5.13165 3.19227C4.78954 2.68425 5.15403 2 5.76653 2H14.4831Z" fill="#1A1A1A"/></svg></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="benefit benefit02">
+            <div class="head fadeEl">
+                <span class="step_num outfit fadeCh fadeInUp">2</span>
+                <p class="t01 fadeCh fadeInUp" style="animation-delay: .1s;">7만원 이상 구매하면 <b>쇼핑백</b>(S 또는 M)과<br><b>치키 랜덤 키링</b>을 함께 드려요.</p>
+                <p class="t02 fadeCh fadeInUp" style="animation-delay: .2s;">(한정 수량 / 소진 시 종료)</p>
+            </div>
+            <div class="gift_list fadeEl">
+                <picture class="img_box fadeCh fadeInUp">
+                    <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/gift01_m.webp">
+                    <img src="/morenvyimg/promotion/261023_GoodThingsToGift/gift01_pc.webp" alt="레고트 쇼핑백">
+                </picture>
+                <picture class="img_box fadeCh fadeInUp" style="animation-delay: .1s;">
+                    <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/gift02_m.webp">
+                    <img src="/morenvyimg/promotion/261023_GoodThingsToGift/gift02_pc.webp" alt="치키 랜덤 키링">
+                </picture>
+            </div>
+            <div class="notice">
+                <button type="button" class="notice_toggle" aria-expanded="false">
+                    <span>유의사항</span>
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 8.5H12V7.5H4V8.5Z" fill="#848484"/><path class="ver" d="M7.5 4V12H8.5V4H7.5Z" fill="#848484"/></svg>
+                </button>
+                <ul>
+                    <li>사은품은 쿠폰과 적립금 사용을 반영한 실결제금액 기준으로 적용됩니다.</li>
+                    <li>사은품 증정 대상 주문의 경우, 주문서 페이지에서 선택할 수 있으며, 사은품을 체크해주셔야 정상 참여가 진행됩니다.</li>
+                    <li>사은품이 표시되지 않는다면 증정 대상이 아니거나 재고가 소진된 상태이므로 참고 부탁드립니다.</li>
+                    <li>사은품 조기 품절 시 사전 공지 없이 이벤트가 종료될 수 있습니다.</li>
+                    <li>사은품은 교환 및 환불이 불가하며, 주문 건 반품 시 사은품도 함께 반품해주셔야 합니다.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="benefit benefit03">
+            <div class="head fadeEl">
+                <span class="step_num outfit fadeCh fadeInUp">3</span>
+                <p class="t01 fadeCh fadeInUp" style="animation-delay: .1s;">선물하기로 주문을 완료하면<br>다음 쇼핑에 사용할 수 있는 <b>1,000M</b>가 돌아와요.</p>
+                <p class="t02 fadeCh fadeInUp" style="animation-delay: .2s;">(지급일로부터 7일간 사용 가능)</p>
+            </div>
+            <div class="mileage fadeEl">
+                <picture class="img_box fadeCh fadeInUp">
+                    <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/mileage_m.webp">
+                    <img src="/morenvyimg/promotion/261023_GoodThingsToGift/mileage_pc.webp" alt="1,000 마일리지">
+                </picture>
+            </div>
+            <div class="notice">
+                <button type="button" class="notice_toggle" aria-expanded="false">
+                    <span>유의사항</span>
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 8.5H12V7.5H4V8.5Z" fill="#848484"/><path class="ver" d="M7.5 4V12H8.5V4H7.5Z" fill="#848484"/></svg>
+                </button>
+                <ul>
+                    <li>사용 기간: 지급일로부터 7일간</li>
+                    <li>본 마일리지는 선물하기 주문 고객에게 지급됩니다.</li>
+                    <li>선물하기 주문 건의 배송 완료일 다음 날 주문 고객의 계정으로 자동 지급됩니다.</li>
+                    <li>마일리지는 기간 내 미사용 시 자동 소멸되며, 소멸 후 재지급되지 않습니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 기획전 섹션 02 -->
+    <div class="p_sec02">
+        <div class="guide" id="pj_guide">
+            <div class="tit fadeEl">
+                <h3 class="t01 fadeCh fadeInUp">선물하기 <span class="outfit">Guide</span></h3>
+                <p class="t02 fadeCh fadeInUp" style="animation-delay: .1s;">지금 바로 만나긴 어렵다구요?<br>그래서 준비했어요, 선물하기.</p>
+            </div>
+            <div class="guide_slide fadeEl">
+            <div class="swiper swiper02 fadeCh fadeInUp">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="step outfit">Step 1</p>
+                        <p class="t03">마음에 드는 제품을 고른 뒤<br><b>[선물하기]</b> 버튼을 눌러주세요.</p>
+                        <picture class="img_box">
+                            <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/guide01_m.webp">
+                            <img src="/morenvyimg/promotion/261023_GoodThingsToGift/guide01_pc.webp" alt="선물하기 버튼 선택 화면">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="step outfit">Step 2</p>
+                        <p class="t03">메시지 카드를<br>작성할 수 있어요.</p>
+                        <picture class="img_box">
+                            <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/guide02_m.webp">
+                            <img src="/morenvyimg/promotion/261023_GoodThingsToGift/guide02_pc.webp" alt="메시지 카드 작성 화면">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="step outfit">Step 3</p>
+                        <p class="t03">주소를 몰라도 괜찮아요.<br>받는 분의 이름과 연락처만 입력하세요.</p>
+                        <picture class="img_box">
+                            <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/guide03_m.webp">
+                            <img src="/morenvyimg/promotion/261023_GoodThingsToGift/guide03_pc.webp" alt="받는 분 정보 입력 화면">
+                        </picture>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            </div>
+        </div>
+        <div class="pick fadeEl" id="pj_curation">
+            <h3 class="t01 fadeCh fadeInUp">Pick Their Happy</h3>
+            <p class="t02 fadeCh fadeInUp" style="animation-delay: .1s;">누구에게 어떤 즐거움을 선물할까요?</p>
+            <p class="t02 fadeCh fadeInUp" style="animation-delay: .2s;">좋아하는 것, 자주 쓰는 것, 곧 떠날 곳을 떠올리며<br>그 사람에게 꼭 맞는 선물을 찾아보세요.</p>
+        </div>
+    </div>
+
+    <!-- 기획전 섹션 03 -->
+    <div class="p_sec03 fadeEl">
+        <picture class="img_box fadeCh fadeIn">
+            <source media="(max-width: 1024px)" srcset="/morenvyimg/promotion/261023_GoodThingsToGift/curation_m.webp">
+            <img src="/morenvyimg/promotion/261023_GoodThingsToGift/curation_pc.webp" alt="Gift! 레고트 쇼핑백">
+        </picture>
+    </div>
+
+    <!-- 하위상품진열 상단 -->
+    <div class="sec_wrap p_sec04" id="pj_cate01">
+        <div class="cate_tit fadeEl">
+            <p class="t01 outfit fadeCh fadeInUp">Hello, Pokémon!</p>
+            <h3 class="t02 fadeCh fadeInUp" style="animation-delay: .1s;">아이도 어른도 반가운 선물</h3>
+            <p class="t03 fadeCh fadeInUp" style="animation-delay: .2s;">아이에게는 신나는 친구, 어른에게는 반가운 추억.<br>포켓몬과 함께하는 즐거운 모험</p>
+        </div>
+    </div>
+
+    <!-- 하위상품진열 상단 -->
+    <div class="sec_wrap p_sec05" id="pj_cate02">
+        <div class="cate_tit fadeEl">
+            <p class="t01 outfit fadeCh fadeInUp">Carry The Fun</p>
+            <h3 class="t02 fadeCh fadeInUp" style="animation-delay: .1s;">여행의 설렘을 먼저 선물해요</h3>
+            <p class="t03 fadeCh fadeInUp" style="animation-delay: .2s;">떠나는 순간부터 돌아오는 길까지<br>필요한 것과 즐거움을 함께 챙겨줄 트래블 아이템</p>
+        </div>
+    </div>
+
+    <!-- 하위상품진열 상단 -->
+    <div class="sec_wrap p_sec06" id="pj_cate03">
+        <div class="cate_tit fadeEl">
+            <p class="t01 outfit fadeCh fadeInUp">Sip In Color</p>
+            <h3 class="t02 fadeCh fadeInUp" style="animation-delay: .1s;">매일의 한 모금도 좋아하는 컬러로</h3>
+            <p class="t03 fadeCh fadeInUp" style="animation-delay: .2s;">크기부터 컬러, 쓰임까지<br>받는 사람의 하루에 꼭 맞는 텀블러</p>
+        </div>
+    </div>
+
+    <!-- 하위상품진열 상단 -->
+    <div class="sec_wrap p_sec07" id="pj_cate04">
+        <div class="cate_tit fadeEl">
+            <p class="t01 outfit fadeCh fadeInUp">Lunch, Packed</p>
+            <h3 class="t02 fadeCh fadeInUp" style="animation-delay: .1s;">맛있는 하루를 차곡차곡</h3>
+            <p class="t03 fadeCh fadeInUp" style="animation-delay: .2s;">한 끼부터 간식까지 알차게, 매일의 맛있는 시간을 챙겨줄<br class="pc"> 실용적이고 컬러풀한 런치웨어</p>
+        </div>
+    </div>
+
+    <!-- 하위상품진열 상단 -->
+    <div class="sec_wrap p_sec08" id="pj_cate05">
+        <div class="cate_tit fadeEl">
+            <p class="t01 outfit fadeCh fadeInUp">Color On The Table</p>
+            <h3 class="t02 fadeCh fadeInUp" style="animation-delay: .1s;">매일의 식탁에 컬러 한 스푼</h3>
+            <p class="t03 fadeCh fadeInUp" style="animation-delay: .2s;">담고, 나누고, 함께 먹는 시간을<br>조금 더 즐겁게 만들어줄 레이지선데이 컬렉션</p>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    /* 공통 */
+    #container #contents {max-width: 100%; width: 100%; padding: 0;}
+    #promotion_box {overflow-x: clip; background: #fef8ee; word-break: keep-all; letter-spacing: -0.03em; color: #1a1a1a;}
+    #promotion_box *, #promotion_box *::before, #promotion_box *::after {box-sizing: border-box;}
+    #promotion_box * {font-family: "SUIT Variable", "SUIT", sans-serif;}
+    #promotion_box .outfit, #promotion_box .outfit * {font-family: "Outfit", "SUIT Variable", sans-serif; letter-spacing: -0.01em;}
+    #promotion_box p, #promotion_box h2, #promotion_box h3, #promotion_box ul {margin: 0; padding: 0;}
+    #promotion_box h2, #promotion_box h3 {font-weight: inherit;}
+    #promotion_box b {font-weight: 700;}
+    #promotion_box a {color: inherit; text-decoration: none;}
+    #promotion_box img {display: block; width: 100%; max-width: none; height: auto;}
+    #promotion_box picture {display: block; height: auto; overflow: visible;}
+    #promotion_box button {padding: 0; border: 0; background: none; cursor: pointer; color: inherit;}
+    #promotion_box .mo {display: none;}
+    #promotion_box .swiper {position: relative; overflow: hidden;}
+    #promotion_box .swiper-wrapper {position: relative; display: flex; width: 100%; height: 100%; z-index: 1; box-sizing: content-box;}
+    #promotion_box .swiper-slide {flex-shrink: 0; position: relative; width: 100%; height: 100%;}
+    #promotion_box .swiper-fade .swiper-slide {pointer-events: none; transition-property: opacity;}
+    #promotion_box .swiper-fade .swiper-slide-active {pointer-events: auto;}
+
+    /* 유의사항 */
+    #promotion_box .notice {display: flex; flex-direction: column; align-items: center; margin-top: clamp(2rem, 2.083vw, 4rem);}
+    #promotion_box .notice_toggle {display: flex; align-items: center; gap: clamp(0.3rem, 0.313vw, 0.6rem); border-bottom: 1px solid #848484; font-size: clamp(1.2rem, 1.042vw, 2rem); line-height: 140%; color: #848484;}
+    #promotion_box .notice_toggle svg {width: clamp(1rem, 1.042vw, 2rem); height: clamp(1rem, 1.042vw, 2rem);}
+    #promotion_box .notice_toggle.on svg .ver {display: none;}
+    #promotion_box .notice ul {display: none; width: clamp(31rem, 32.292vw, 62rem); margin-top: clamp(1rem, 1.042vw, 2rem);}
+    #promotion_box .notice li {position: relative; padding-left: clamp(1.5rem, 1.563vw, 3rem); font-size: clamp(1.2rem, 1.042vw, 2rem); line-height: 140%; color: #848484; list-style: none;}
+    #promotion_box .notice li + li {margin-top: clamp(0.3rem, 0.313vw, 0.6rem);}
+    #promotion_box .notice li::before {content: ""; position: absolute; left: clamp(0.55rem, 0.573vw, 1.1rem); top: .6em; width: clamp(0.2rem, 0.208vw, 0.4rem); height: clamp(0.2rem, 0.208vw, 0.4rem); border-radius: 50%; background: #848484;}
+
+    /* 섹션 공통 */
+    #promotion_box .img_box {overflow: hidden;}
+    #promotion_box .step_num {display: flex; align-items: center; justify-content: center; width: clamp(2.3rem, 2.396vw, 4.6rem); height: clamp(2.3rem, 2.396vw, 4.6rem); border-radius: 50%; background: #54361c; font-size: clamp(1.44rem, 1.25vw, 2.4rem); font-weight: 700; line-height: 1; color: #fff;}
+    #promotion_box .head {display: flex; flex-direction: column; align-items: center; text-align: center;}
+    #promotion_box .head .t01 {margin-top: clamp(1.5rem, 1.563vw, 3rem); font-size: clamp(1.44rem, 1.25vw, 2.4rem); line-height: 160%;}
+    #promotion_box .head .t02 {margin-top: clamp(1.5rem, 1.563vw, 3rem); font-size: clamp(1.2rem, 1.042vw, 2rem); line-height: 160%; color: #848484;}
+
+    /* 기획전 키비주얼 */
+    #promotion_box .p_keyvisual {position: relative; aspect-ratio: 1920 / 880; overflow: hidden;}
+    #promotion_box .p_keyvisual .swiper01 {position: absolute; inset: 0; z-index: 0;}
+    #promotion_box .p_keyvisual .swiper-slide img {width: 100%; height: 100%; object-fit: cover;}
+    #promotion_box .kv_txt {position: absolute; left: 61.51%; top: 37.386%; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: clamp(2rem, 2.083vw, 4rem); width: clamp(29rem, 30.208vw, 58rem); text-align: center;}
+    #promotion_box .kv_txt .t01 {width: 100%;}
+    #promotion_box .kv_txt .t02 {font-size: clamp(1.56rem, 1.354vw, 2.6rem); line-height: 160%; color: #fff;}
+
+    /* 기획전 탭 */
+    #promotion_box .p_tab {position: sticky; top: 0; z-index: 20; display: flex; justify-content: center; margin-top: clamp(4.5rem, 4.688vw, 9rem); padding: clamp(0.5rem, 0.521vw, 1rem) 0; pointer-events: none;}
+    #promotion_box .p_tab ul {display: flex; padding: clamp(0.25rem, 0.26vw, 0.5rem); border-radius: 50px; background: #54361c; pointer-events: auto;}
+    #promotion_box .p_tab li {list-style: none;}
+    #promotion_box .p_tab a {display: flex; align-items: center; justify-content: center; width: clamp(6.5rem, 6.771vw, 13rem); height: clamp(2rem, 2.083vw, 4rem); border-radius: 50px; font-size: clamp(1.2rem, 0.833vw, 1.6rem); font-weight: 600; line-height: 150%; color: rgba(255, 255, 255, .6); transition: background .3s, color .3s;}
+    #promotion_box .p_tab li.on a {background: #fff; font-weight: 700; color: #1a1a1a;}
+
+    /* 기획전 섹션 01 */
+    #promotion_box .p_sec01 .intro {padding: clamp(3.5rem, 3.646vw, 7rem) 0 clamp(5rem, 5.208vw, 10rem); text-align: center; color: #54361c;}
+    #promotion_box .p_sec01 .intro .t01 {font-size: clamp(1.2rem, 1.042vw, 2rem); font-weight: 500; line-height: 120%;}
+    #promotion_box .p_sec01 .intro .t02 {margin-top: clamp(1.5rem, 1.563vw, 3rem); font-size: clamp(2.88rem, 2.5vw, 4.8rem); font-weight: 700; line-height: 150%;}
+    #promotion_box .p_sec01 .intro .t03 {margin-top: clamp(1.5rem, 1.563vw, 3rem); font-size: clamp(1.44rem, 1.25vw, 2.4rem); line-height: 160%; color: #1a1a1a;}
+    #promotion_box .p_sec01 .benefit + .benefit {margin-top: clamp(5rem, 5.208vw, 10rem);}
+    #promotion_box .p_sec01 .cate_list {display: flex; flex-direction: column; align-items: center; gap: clamp(2rem, 2.083vw, 4rem); width: clamp(41rem, 42.708vw, 82rem); margin: clamp(3rem, 3.125vw, 6rem) auto 0;}
+    #promotion_box .p_sec01 .cate_list a {display: flex; flex-direction: column; align-items: center; text-align: center; color: #1e1e1e;}
+    #promotion_box .p_sec01 .cate_list .img_box {width: 100%; margin-bottom: clamp(0.5rem, 0.521vw, 1rem); border-radius: clamp(1.2rem, 1.25vw, 2.4rem); background: #fff;}
+    #promotion_box .p_sec01 .cate_list .main .img_box {aspect-ratio: 820 / 520;}
+    #promotion_box .p_sec01 .cate_list .img_box img {height: 100%; object-fit: cover;}
+    #promotion_box .p_sec01 .cate_list .t01 {font-size: clamp(1.44rem, 1.25vw, 2.4rem); line-height: 150%;}
+    #promotion_box .p_sec01 .cate_list .t02 {display: flex; align-items: center; margin-top: clamp(0.2rem, 0.208vw, 0.4rem); font-size: clamp(1.44rem, 1.25vw, 2.4rem); font-weight: 600; line-height: 150%; text-transform: uppercase;}
+    #promotion_box .p_sec01 .cate_list .t02 svg {width: clamp(1.2rem, 1.25vw, 2.4rem); height: auto; aspect-ratio: 20 / 12;}
+    #promotion_box .p_sec01 .thumb_list {display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 2.083vw, 4rem) clamp(1rem, 1.042vw, 2rem); width: 100%;}
+    #promotion_box .p_sec01 .thumb_list .img_box {aspect-ratio: 1 / 1;}
+    #promotion_box .p_sec01 .gift_list {display: flex; gap: clamp(1rem, 1.042vw, 2rem); width: clamp(41rem, 42.708vw, 82rem); margin: clamp(3rem, 3.125vw, 6rem) auto 0;}
+    #promotion_box .p_sec01 .gift_list .img_box {flex: 1; border-radius: clamp(1.2rem, 1.25vw, 2.4rem); background: #fff;}
+    #promotion_box .p_sec01 .mileage {width: clamp(41rem, 42.708vw, 82rem); margin: clamp(3rem, 3.125vw, 6rem) auto 0;}
+    #promotion_box .p_sec01 .mileage .img_box {border-radius: clamp(1.2rem, 1.25vw, 2.4rem); background: #fff;}
+
+    /* 기획전 섹션 02 */
+    #promotion_box .p_sec02 {background: linear-gradient(to bottom, #fef8ee 0%, #f3ce93 100%);}
+    #promotion_box .p_sec02 .guide {padding: clamp(6rem, 6.25vw, 12rem) 0;}
+    #promotion_box .p_sec02 .tit {text-align: center;}
+    #promotion_box .p_sec02 .tit .t01 {font-size: clamp(2.88rem, 2.5vw, 4.8rem); font-weight: 800; line-height: 150%; color: #54361c;}
+    #promotion_box .p_sec02 .tit .t01 .outfit {font-weight: 700;}
+    #promotion_box .p_sec02 .tit .t02 {margin-top: clamp(1.5rem, 1.563vw, 3rem); font-size: clamp(1.44rem, 1.25vw, 2.4rem); line-height: 160%;}
+    #promotion_box .p_sec02 .swiper02 {width: clamp(51.4rem, 53.542vw, 102.8rem); margin: clamp(5rem, 5.208vw, 10rem) auto 0;}
+    #promotion_box .p_sec02 .swiper02 .swiper-slide {display: flex; flex-direction: column; align-items: center; height: auto; text-align: center;}
+    #promotion_box .p_sec02 .step {display: flex; align-items: center; justify-content: center; height: clamp(2.4rem, 2.5vw, 4.8rem); padding: 0 clamp(2.6rem, 2.708vw, 5.2rem); border-radius: 100px; background: #54361c; font-size: clamp(1.2rem, 1.042vw, 2rem); font-weight: 600; line-height: 120%; color: #fff;}
+    #promotion_box .p_sec02 .t03 {margin-top: clamp(1.8rem, 1.875vw, 3.6rem); font-size: clamp(1.2rem, 1.042vw, 2rem); line-height: 150%; color: #000;}
+    #promotion_box .p_sec02 .swiper02 .img_box {width: 100%; margin-top: clamp(2.8rem, 2.917vw, 5.6rem);}
+    #promotion_box .p_sec02 .swiper-pagination {position: static; display: flex; justify-content: center; gap: clamp(0.5rem, 0.521vw, 1rem); margin-top: clamp(2.8rem, 2.917vw, 5.6rem);}
+    #promotion_box .p_sec02 .swiper-pagination-bullet {display: block; width: clamp(0.55rem, 0.573vw, 1.1rem); height: clamp(0.55rem, 0.573vw, 1.1rem); margin: 0; border-radius: 100px; background: #fff; opacity: .6; cursor: pointer; transition: width .3s, opacity .3s;}
+    #promotion_box .p_sec02 .swiper-pagination-bullet-active {width: clamp(2.2rem, 2.292vw, 4.4rem); opacity: 1;}
+    #promotion_box .p_sec02 .pick {padding: 0 0 clamp(5rem, 5.208vw, 10rem); text-align: center;}
+    #promotion_box .p_sec02 .pick .t01 {margin-bottom: clamp(1.5rem, 1.563vw, 3rem); font-size: clamp(2.88rem, 2.5vw, 4.8rem); font-weight: 800; line-height: 150%; color: #54361c;}
+    #promotion_box .p_sec02 .pick .t02 {font-size: clamp(1.44rem, 1.25vw, 2.4rem); line-height: 160%;}
+    #promotion_box .p_sec02 .pick .t02 + .t02 {margin-top: clamp(1.2rem, 1.25vw, 2.4rem);}
+
+    /* 기획전 섹션 03 */
+    #promotion_box .p_sec03 {background: #fbdcaa;}
+
+    /* 하위상품진열 상단 */
+    #promotion_box .sec_wrap {background: #fbdcaa;}
+    #promotion_box .cate_tit {display: flex; flex-direction: column; align-items: center; padding: clamp(6rem, 6.25vw, 12rem) clamp(1rem, 1.042vw, 2rem) clamp(4rem, 4.167vw, 8rem); text-align: center;}
+    #promotion_box .cate_tit .t01 {display: flex; align-items: center; height: clamp(2.4rem, 2.5vw, 4.8rem); padding: 0 clamp(2.6rem, 2.708vw, 5.2rem); border-radius: 100px; background: #fef6e8; font-size: clamp(1.2rem, 1.042vw, 2rem); font-weight: 600; line-height: 120%; color: #54361c;}
+    #promotion_box .cate_tit .t02 {margin-top: clamp(1.8rem, 1.875vw, 3.6rem); font-size: clamp(2.4rem, 2.083vw, 4rem); font-weight: 800; line-height: 150%; color: #54361c;}
+    #promotion_box .cate_tit .t03 {margin-top: clamp(1.8rem, 1.875vw, 3.6rem); font-size: clamp(1.2rem, 1.042vw, 2rem); line-height: 150%; color: #000;}
+
+    /* animation */
+    #promotion_box .fadeEl .fadeCh {opacity: 0;}
+    #promotion_box .fadeEl.on .fadeCh.fadeInUp {animation: fadeInUp 1s ease both;}
+    #promotion_box .fadeEl.on .fadeCh.fadeIn {animation: fadeIn 1.2s ease both;}
+    @keyframes fadeInUp {
+        0% {opacity: 0; transform: translateY(30px);}
+        100% {opacity: 1; transform: none;}
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    @media (prefers-reduced-motion: reduce) {
+        #promotion_box .fadeEl .fadeCh {opacity: 1; animation: none !important;}
+    }
+
+    /* 반응형 */
+    @media screen and (max-width: 1024px) {
+        #promotion_box .pc {display: none;}
+        #promotion_box .mo {display: block;}
+
+        #promotion_box .notice {margin-top: clamp(1.7rem, 5.556vw, 3rem);}
+        #promotion_box .notice_toggle {gap: clamp(0.51rem, 1.667vw, 0.9rem); font-size: clamp(1.02rem, 3.333vw, 1.8rem);}
+        #promotion_box .notice_toggle svg {width: clamp(1.36rem, 4.444vw, 2.4rem); height: clamp(1.36rem, 4.444vw, 2.4rem);}
+        #promotion_box .notice ul {width: 100%; margin-top: clamp(1.7rem, 5.556vw, 3rem);}
+        #promotion_box .notice li {padding-left: clamp(1.53rem, 5vw, 2.7rem); font-size: clamp(1.02rem, 3.333vw, 1.8rem);}
+        #promotion_box .notice li + li {margin-top: clamp(0.51rem, 1.667vw, 0.9rem);}
+        #promotion_box .notice li::before {left: clamp(0.595rem, 1.944vw, 1.05rem); width: clamp(0.255rem, 0.833vw, 0.45rem); height: clamp(0.255rem, 0.833vw, 0.45rem);}
+
+        #promotion_box .step_num {width: clamp(2.55rem, 8.333vw, 4.5rem); height: clamp(2.55rem, 8.333vw, 4.5rem); font-size: clamp(1.19rem, 3.889vw, 2.1rem);}
+        #promotion_box .head .t01 {margin-top: clamp(1.7rem, 5.556vw, 3rem); font-size: clamp(1.36rem, 4.444vw, 2.4rem);}
+        #promotion_box .head .t02 {margin-top: clamp(0.85rem, 2.778vw, 1.5rem); font-size: clamp(1.19rem, 3.889vw, 2.1rem);}
+
+        #promotion_box .p_keyvisual {aspect-ratio: 360 / 540;}
+        #promotion_box .kv_txt {left: 50%; top: 11.111%; gap: clamp(0.85rem, 2.778vw, 1.5rem); width: calc(100% - clamp(1.7rem, 5.556vw, 3rem) * 2); transform: translateX(-50%);}
+        #promotion_box .kv_txt .t01 {width: clamp(24.65rem, 80.556vw, 43.5rem);}
+        #promotion_box .kv_txt .t02 {font-size: clamp(1.36rem, 4.444vw, 2.4rem);}
+
+        #promotion_box .p_tab {margin-top: clamp(4.42rem, 14.444vw, 7.8rem); padding: clamp(0.68rem, 2.222vw, 1.2rem) 0;}
+        #promotion_box .p_tab ul {padding: clamp(0.425rem, 1.389vw, 0.75rem);}
+        #promotion_box .p_tab a {width: clamp(8.755rem, 28.611vw, 15.45rem); height: clamp(2.55rem, 8.333vw, 4.5rem); font-size: clamp(1.19rem, 3.889vw, 2.1rem);}
+
+        #promotion_box .p_sec01 .intro {padding: clamp(4.42rem, 14.444vw, 7.8rem) clamp(1.7rem, 5.556vw, 3rem) clamp(5.1rem, 16.667vw, 9rem);}
+        #promotion_box .p_sec01 .intro .t01 {font-size: clamp(1.36rem, 4.444vw, 2.4rem);}
+        #promotion_box .p_sec01 .intro .t02 {margin-top: clamp(1.7rem, 5.556vw, 3rem); font-size: clamp(2.21rem, 7.222vw, 3.9rem); line-height: 130%;}
+        #promotion_box .p_sec01 .intro .t03 {margin-top: clamp(1.7rem, 5.556vw, 3rem); font-size: clamp(1.36rem, 4.444vw, 2.4rem);}
+        #promotion_box .p_sec01 .benefit {padding: 0 clamp(1.7rem, 5.556vw, 3rem);}
+        #promotion_box .p_sec01 .benefit + .benefit {margin-top: clamp(5.1rem, 16.667vw, 9rem);}
+        #promotion_box .p_sec01 .cate_list {gap: clamp(2.55rem, 8.333vw, 4.5rem); width: 100%; margin-top: clamp(2.55rem, 8.333vw, 4.5rem);}
+        #promotion_box .p_sec01 .cate_list .img_box {margin-bottom: clamp(0.85rem, 2.778vw, 1.5rem); border-radius: clamp(1.02rem, 3.333vw, 1.8rem);}
+        #promotion_box .p_sec01 .cate_list .main .img_box {aspect-ratio: 320 / 200;}
+        #promotion_box .p_sec01 .cate_list .t01 {font-size: clamp(1.36rem, 4.444vw, 2.4rem); line-height: 140%;}
+        #promotion_box .p_sec01 .cate_list .t02 {margin-top: 0; font-size: clamp(1.36rem, 4.444vw, 2.4rem); line-height: 140%;}
+        #promotion_box .p_sec01 .cate_list .t02 svg {width: clamp(1.7rem, 5.556vw, 3rem);}
+        #promotion_box .p_sec01 .thumb_list {gap: clamp(2.55rem, 8.333vw, 4.5rem) clamp(0.85rem, 2.778vw, 1.5rem);}
+        #promotion_box .p_sec01 .gift_list {flex-direction: column; gap: clamp(1.7rem, 5.556vw, 3rem); width: 100%; margin-top: clamp(1.7rem, 5.556vw, 3rem);}
+        #promotion_box .p_sec01 .gift_list .img_box {border-radius: clamp(1.02rem, 3.333vw, 1.8rem);}
+        #promotion_box .p_sec01 .mileage {width: 100%; margin-top: clamp(1.7rem, 5.556vw, 3rem);}
+        #promotion_box .p_sec01 .mileage .img_box {border-radius: clamp(1.02rem, 3.333vw, 1.8rem);}
+
+        #promotion_box .p_sec02 .guide {padding: clamp(6.8rem, 22.222vw, 12rem) 0 0;}
+        #promotion_box .p_sec02 .tit {padding: 0 clamp(1.7rem, 5.556vw, 3rem) clamp(3.4rem, 11.111vw, 6rem);}
+        #promotion_box .p_sec02 .tit .t01 {font-size: clamp(2.21rem, 7.222vw, 3.9rem); line-height: 120%;}
+        #promotion_box .p_sec02 .tit .t02 {margin-top: clamp(2.04rem, 6.667vw, 3.6rem); font-size: clamp(1.36rem, 4.444vw, 2.4rem);}
+        #promotion_box .p_sec02 .swiper02 {width: 100%; margin-top: 0;}
+        #promotion_box .p_sec02 .step {height: clamp(3.4rem, 11.111vw, 6rem); padding: 0 clamp(2.975rem, 9.722vw, 5.25rem); font-size: clamp(1.36rem, 4.444vw, 2.4rem);}
+        #promotion_box .p_sec02 .t03 {margin-top: clamp(1.7rem, 5.556vw, 3rem); font-size: clamp(1.19rem, 3.889vw, 2.1rem); line-height: 160%; color: #1a1a1a;}
+        #promotion_box .p_sec02 .swiper02 .img_box {width: clamp(26.35rem, 86.111vw, 46.5rem); margin-top: clamp(1.87rem, 6.111vw, 3.3rem);}
+        #promotion_box .p_sec02 .swiper-pagination {gap: clamp(0.68rem, 2.222vw, 1.2rem); margin-top: clamp(1.87rem, 6.111vw, 3.3rem);}
+        #promotion_box .p_sec02 .swiper-pagination-bullet {width: clamp(0.68rem, 2.222vw, 1.2rem); height: clamp(0.68rem, 2.222vw, 1.2rem);}
+        #promotion_box .p_sec02 .swiper-pagination-bullet-active {width: clamp(2.04rem, 6.667vw, 3.6rem);}
+        #promotion_box .p_sec02 .pick {padding: clamp(6.8rem, 22.222vw, 12rem) clamp(1.7rem, 5.556vw, 3rem) clamp(3.4rem, 11.111vw, 6rem);}
+        #promotion_box .p_sec02 .pick .t01 {margin-bottom: clamp(1.7rem, 5.556vw, 3rem); font-family: "Outfit", "SUIT Variable", sans-serif; font-size: clamp(2.21rem, 7.222vw, 3.9rem); font-weight: 700; line-height: 120%; letter-spacing: -0.01em;}
+        #promotion_box .p_sec02 .pick .t02 {font-size: clamp(1.36rem, 4.444vw, 2.4rem);}
+        #promotion_box .p_sec02 .pick .t02 + .t02 {margin-top: clamp(1.7rem, 5.556vw, 3rem);}
+
+        #promotion_box .cate_tit {padding: clamp(6.8rem, 22.222vw, 12rem) clamp(1.7rem, 5.556vw, 3rem) clamp(3.4rem, 11.111vw, 6rem);}
+        #promotion_box .p_sec04 .cate_tit {padding: clamp(5.1rem, 16.667vw, 9rem) clamp(1.7rem, 5.556vw, 3rem) clamp(2.04rem, 6.667vw, 3.6rem);}
+        #promotion_box .cate_tit .t01 {height: clamp(3.4rem, 11.111vw, 6rem); padding: 0 clamp(2.975rem, 9.722vw, 5.25rem); font-size: clamp(1.36rem, 4.444vw, 2.4rem);}
+        #promotion_box .cate_tit .t02 {margin-top: clamp(1.7rem, 5.556vw, 3rem); font-size: clamp(2.04rem, 6.667vw, 3.6rem); font-weight: 700; line-height: 120%;}
+        #promotion_box .cate_tit .t03 {margin-top: clamp(1.7rem, 5.556vw, 3rem); font-size: clamp(1.19rem, 3.889vw, 2.1rem); line-height: 160%; color: #1a1a1a;}
+
+        @keyframes fadeInUp {
+            0% {opacity: 0; transform: translateY(20px);}
+            100% {opacity: 1; transform: none;}
+        }
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        /* 유의사항 */
+        $("#promotion_box .notice_toggle").on("click", function () {
+            $(this).toggleClass("on").attr("aria-expanded", $(this).hasClass("on"));
+            $(this).next("ul").stop().slideToggle(300);
+        });
+
+        /* swiper */
+        if (typeof Swiper !== "undefined") {
+            var swiper01 = new Swiper(".swiper01", {
+                effect: "fade",
+                fadeEffect: {crossFade: false},
+                speed: 1200,
+                loop: true,
+                allowTouchMove: false,
+                autoplay: {delay: 3500, disableOnInteraction: false},
+            });
+
+            var swiper02 = new Swiper(".swiper02", {
+                speed: 600,
+                loop: true,
+                autoHeight: false,
+                autoplay: {delay: 3000, disableOnInteraction: false},
+                pagination: {el: ".swiper02 .swiper-pagination", clickable: true},
+            });
+        };
+
+        /* 탭 */
+        var tabDest = ["#pj_promotion", "#pj_guide", "#pj_curation"];
+
+        function headerHeight() {
+            var $header = $("#header");
+            if (!$header.length) return 0;
+            return ($header.hasClass("fixed") || $header.css("position") === "fixed") ? $header.outerHeight() : 0;
+        };
+
+        function tabOffset() {
+            return headerHeight() + $("#promotion_box .p_tab").outerHeight();
+        };
+
+        function tabActive() {
+            var scrollTop = $(window).scrollTop() + tabOffset() + 2;
+            var current = 0;
+            $.each(tabDest, function (i, dest) {
+                if ($(dest).length && $(dest).offset().top <= scrollTop) current = i;
+            });
+            $("#promotion_box .p_tab").css("top", headerHeight());
+            $("#promotion_box .p_tab li").removeClass("on").eq(current).addClass("on");
+        };
+
+        $("#promotion_box .p_tab a, #promotion_box .anchor").on("click", function (e) {
+            var $target = $($(this).attr("href"));
+            if (!$target.length) return;
+            e.preventDefault();
+            $("html, body").stop().animate({scrollTop: $target.offset().top - tabOffset()}, 600);
+        });
+
+        /* animation */
+        function fadeAni() {
+            var scrollTop = $(window).scrollTop();
+            var winHeight = $(window).height();
+            var offset = window.innerWidth <= 1024 ? 200 : 300;
+
+            $("#promotion_box .fadeEl").each(function () {
+                var thisOffset = $(this).hasClass("p_keyvisual") ? 0 : offset;
+                if (scrollTop + winHeight - thisOffset >= $(this).offset().top) $(this).addClass("on");
+            });
+        };
+
+        $(window).on("load scroll resize", function () {
+            fadeAni();
+            tabActive();
+        });
+        fadeAni();
+        tabActive();
+    });
+</script>
