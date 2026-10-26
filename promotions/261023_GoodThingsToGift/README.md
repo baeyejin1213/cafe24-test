@@ -66,6 +66,12 @@ FIGMA_TOKEN=figd_xxx node figma-export.mjs ../promotions/261023_GoodThingsToGift
 1. **스와이퍼는 뷰포트에 들어왔을 때 autoplay** — KV(`.swiper01`)·스텝(`.swiper02`) 모두 생성 직후 `autoplay.stop()`, `IntersectionObserver`(threshold 0.3)로 화면에 30% 이상 보이면 `autoplay.start()`, 벗어나면 `stop()`. `prefers-reduced-motion`이면 자동 재생하지 않습니다.
 2. **스텝 스와이퍼: `.step`·`.t03` 고정, 이미지만 슬라이드** — Step 배지·문구를 swiper 밖 `.step_txt`로 빼고 3세트를 grid 한 칸에 겹쳐 둔 뒤 `slideChange`의 `realIndex`로 `.txt_item.on`만 보이게(opacity .4s) 했습니다. 슬라이드에는 이미지만 남겼고, 페이지네이션도 swiper 밖(`.swiper02_page`)으로 옮겨 이미지 아래에 둡니다.
 
+### 2차 (2026-10-26)
+
+1. **`.swiper02`에 시안만큼 `spaceBetween`** — 시안 슬라이드 배치: PC 1020px 카드가 1120px 간격(`163:5380` x 0 → `163:5393` x 1120 → `163:5406` x 2240, 카드 사이 100px), MO 360px 슬라이드가 370px 간격(`163:3900` x 0 → `163:3915` x 370, 사이 10px).
+   코드의 PC 슬라이드는 바깥 테두리(4px)까지 포함한 1028px라, 테두리 바깥끼리 사이가 시안과 같도록 **PC 92px@1920**(= 100 − 4×2), **MO 10px@360**으로 넣었습니다(슬라이드 간 거리 PC 1120 / MO 370 — 시안과 동일).
+   `spaceBetween`은 CSS로 바꿀 수 없어 다른 크기와 같은 비율 규칙(PC `clamp(4.6rem, 4.792vw, 9.2rem)` / MO `clamp(0.85rem, 2.778vw, 1.5rem)`)을 JS `swiper02Gap()`으로 계산하고, `resize` 때 값이 바뀌면 `swiper02.update()`로 다시 적용합니다.
+
 ## 기획안 ↔ 시안 차이 (시안을 따름)
 
 - 탭 이름·혜택 문구·카테고리 문구는 기획안과 시안이 같습니다.
