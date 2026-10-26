@@ -522,8 +522,19 @@ ul,ol{margin:0;padding:0;}
                 autoplay: {delay: 3500, disableOnInteraction: false},
             });
 
+            /* 스텝 스와이퍼 슬라이드 간격(시안 PC 92px@1920 · MO 10px@360) — spaceBetween은 CSS로 못 바꿔 화면 폭으로 계산 */
+            function remPx(v) {
+                return v * parseFloat(window.getComputedStyle(document.documentElement).fontSize);
+            };
+            function swiper02Gap() {
+                var w = window.innerWidth;
+                if (window.matchMedia("(max-width: 1024px)").matches) return Math.round(Math.min(Math.max(w * 10 / 360, remPx(0.85)), remPx(1.5)));
+                return Math.round(Math.min(Math.max(w * 92 / 1920, remPx(4.6)), remPx(9.2)));
+            };
+
             var swiper02 = new Swiper(".swiper02", {
                 speed: 600,
+                spaceBetween: swiper02Gap(),
                 loop: true,
                 autoHeight: false,
                 autoplay: {delay: 3000, disableOnInteraction: false},
@@ -533,6 +544,14 @@ ul,ol{margin:0;padding:0;}
                         $("#promotion_box .step_txt .txt_item").removeClass("on").eq(this.realIndex).addClass("on");
                     },
                 },
+            });
+
+            $(window).on("resize", function () {
+                var gap = swiper02Gap();
+                if (swiper02.params.spaceBetween !== gap) {
+                    swiper02.params.spaceBetween = gap;
+                    swiper02.update();
+                };
             });
 
             /* 뷰포트에 들어왔을 때 autoplay */
